@@ -36,3 +36,7 @@ Route::middleware([
 Route::get('/main_menu', function () {
     return view('main_menu');
 })->name('main_menu');
+
+Route::get('/cobacoba', function () {
+    return view("cobacoba");
+})->name('cobacoba');
