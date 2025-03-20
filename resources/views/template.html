@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Background</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar Section -->
+    <nav class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">Mountain Explorer</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-300 transition duration-200">Home</a>
+                <a href="#" class="hover:text-gray-300 transition duration-200">About</a>
+                <a href="#" class="hover:text-gray-300 transition duration-200">Gallery</a>
+                <a href="#" class="hover:text-gray-300 transition duration-200">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mountain Background Section -->
+    <div class="w-full h-96 bg-cover bg-center bg-no-repeat" style="background-image: url('/api/placeholder/1920/1080');">
+        <div class="container mx-auto px-4 h-full flex items-center">
+            <div class="max-w-lg bg-black bg-opacity-50 p-8 text-white rounded-lg backdrop-blur-sm">
+                <h1 class="text-4xl font-bold mb-4">Explore the Mountains</h1>
+                <p class="text-lg mb-6">Discover the beauty and majesty of nature's most impressive landscapes.</p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                    Start Your Journey
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Content Section -->
+    <div class="container mx-auto py-12 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Popular Trails</h2>
+                <p class="text-gray-600">Discover our most visited mountain trails with breathtaking views.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Equipment</h2>
+                <p class="text-gray-600">Find the best gear for your mountain adventures.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Tour Guides</h2>
+                <p class="text-gray-600">Expert guides to ensure your journey is safe and memorable.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -7,7 +7,7 @@ use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view ('welcome');
 });
 
 // Route untuk verifikasi email
